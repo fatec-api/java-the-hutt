@@ -36,6 +36,25 @@ O backlog do produto encontra-se atualmente em fase de definição e priorizaç�
 
 | Rank	| Prioridade | User Stories | Estimativa (Pontos) | Sprint |
 | --- | --- | --- | --- | --- |
+| 01 | Alta | Como gestor, quero inserir as informações dos profissionais para poder alocá-los em projetos futuros e calcular o custo interno | 5 | 1 |
+| 02 | Alta | Como gestor, quero criar novos projetos para que as frentes de trabalho sejam centralizadas e fiquem disponíveis para o lançamento de horas dos profissionais | 3 | 1 |
+| 03 | Alta | Como gestor, quero alocar profissionais aos projetos para que eles possam visualizar suas atividades e itens e o sistema calcule a rentabilidade do projeto | 3 | 1 |
+| 04 | Alta | Como gestor, quero criar/inserir um item e atividade que será utilizada em um projeto para descrever a tarefa que o profissional realizará e poder atribuir um responsável | 3 | 1 |
+| 05 | Alta | Como gestor, quero atribuir um item e atividade ao profissional alocado em um projeto para que ele visualize suas atividades e possa realizar o apontamento de horas | 3 | 1 |
+| 06 | Alta | Como profissional, quero realizar o apontamento de horas diário/semanal selecionando os itens e atividades em que trabalhei para registrar meu esforço com precisão | 8 | 1 |
+| 07 | Alta | Como gestor, quero cadastrar e gerenciar clientes para poder vincular futuros projetos e garantir que as informações de faturamento estejam corretas | 3 | 1 |
+| 08 | Alta | Como gestor, quero visualizar os clientes ativos para poder vinculá-los a novos projetos e garantir a integridade dos relatórios | 2 | 1 |
+| 09 | Alta | Como gestor, quero visualizar a lista de profissionais existentes para saber em quais projetos participam e poder alocá-los de forma estratégica (ex.: especialidade) | 5 | 2 |
+| 10 | Alta | Como gestor, quero visualizar os projetos existentes para acompanhar o consumo de horas, esforço e o andamento das atividades em tempo real | 3 | 2 |
+| 11 | Alta | Como gestor, quero visualizar as atividades e itens realizados em um projeto para acompanhar o progresso comparando esforço planejado vs realizado | 5 | 2 |
+| 12 | Alta | Como gestor, quero visualizar a relação entre itens entregues e horas apontadas para analisar a capacidade produtiva e ajustar estratégias | 5 | 2 |
+| 13 | Alta | Como administrador, quero acessar o histórico de alterações dos lançamentos para garantir rastreabilidade e transparência dos dados | 5 | 2 |
+| 14 | Alta | Como gestor, quero visualizar o relatório de rentabilidade por projeto para identificar contratos lucrativos ou com excesso de custo | 5 | 3 |
+| 15 | Alta | Como financeiro, quero acompanhar o custo real acumulado dos profissionais por projeto para comparar com o orçamento previsto | 5 | 3 |
+| 16 | Média | Como financeiro, quero visualizar o comparativo entre custo acumulado dos profissionais e valor a ser faturado por projeto para monitorar a rentabilidade | 5 | 3 |
+| 17 | Média | Como gestor, quero alterar projetos para garantir que as regras de cobrança e custo estejam sempre atualizadas | 3 | 3 |
+| 18 | Média | Como gestor, quero alterar os dados dos profissionais para manter informações e valores atualizados | 3 | 3 |
+| 19 | Média | Como administrativo, quero alterar as informações dos clientes para manter os dados atualizados e garantir comunicação efetiva | 3 | 3 |
 ---
 
 <a id="dor-e-dod"></a>
@@ -64,6 +83,8 @@ O backlog do produto encontra-se atualmente em fase de definição e priorizaç�
 <img src="https://cdn.simpleicons.org/javascript/F7DF1E" height="32"/>
 <img src="https://cdn.simpleicons.org/typescript/3178C6" height="32"/>
 <img src="https://cdn.simpleicons.org/react/61DAFB" height="32"/>
+<img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" height="32"/>
+<img src="https://cdn.simpleicons.org/daisyui/5A0EF8" height="32"/>
 </p>
 
 ### ⚙️ Backend & Dados
@@ -71,6 +92,7 @@ O backlog do produto encontra-se atualmente em fase de definição e priorizaç�
 <img src="https://cdn.simpleicons.org/openjdk/ED8B00" height="32"/>
 <img src="https://cdn.simpleicons.org/spring/6DB33F" height="31"/>
 <img src="https://cdn.simpleicons.org/nodedotjs/339933" height="32"/>
+<img src="https://cdn.simpleicons.org/mysql/4479A1" height="31"/>
 <img src="https://cdn.simpleicons.org/mongodb/47A248" height="33"/>
 <!-- Este é um comentário em Markdown -->
 </p>
@@ -79,7 +101,7 @@ O backlog do produto encontra-se atualmente em fase de definição e priorizaç�
 <p>
 <img src="https://cdn.simpleicons.org/git/F05032" height="32"/>
 <img src="https://cdn.simpleicons.org/jira/0052CC" height="32"/>
-<img src="https://cdn.simpleicons.org/figma/F24E1E" height="32"/>
+<img src="https://cdn.simpleicons.org/excalidraw/6965DB" height="32"/>
 <img src="https://cdn.simpleicons.org/swagger/85EA2D" height="32"/>
 </p>
 
@@ -102,7 +124,26 @@ Além disso, seguimos um padrão de commits para garantir maior rastreabilidade 
 
 A estrutura de pastas do projeto (backend e frontend) ainda será definida conforme a evolução da arquitetura da aplicação e a organização dos módulos durante a primeira sprint.
 ```
-java-the-hut/
+│
+├── 📁 backend/
+│
+├── 📁 frontend/
+│   └── 📁 src/
+│       ├── 📁 assets/
+│       ├── 📁 components/
+│       ├── 📁 pages/
+│       ├── 📁 features/
+│       │   ├── 📁 Auth/
+│       │   └── 📁 Dashboard/
+│       ├── 📁 hooks/
+│       ├── 📁 context/
+│       ├── 📁 services/
+│       ├── 📁 types/
+│       ├── 📁 utils/
+│       ├── 📁 styles/
+│       ├── App.tsx
+│       └── index.tsx
+│
  ```
 
 ---
