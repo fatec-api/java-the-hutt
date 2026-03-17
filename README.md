@@ -4,7 +4,8 @@ Projeto desenvolvido pela equipe Java the Hutt do 3º semestre de Desenvolviment
 
 ---
 <div align="center">
-
+    
+[A Dor do Cliente](#a-dor) | 
 [O Desafio](#o-desafio) | 
 [Backlog de Produto](#backlog-de-produto) | 
 [DoR e DoD](#dor-e-dod) | 
@@ -19,6 +20,21 @@ Projeto desenvolvido pela equipe Java the Hutt do 3º semestre de Desenvolviment
 [Equipe](#autores) |
 
 </div>
+
+---
+<a id="a-dor"></a>
+## 🎯 A Dor do Cliente
+A GSW Software (líder em TI, +520 profissionais) sofre com um gargalo crítico de gestão. Segundo o stakeholder Diego Miranda, o atual sistema de apontamento de horas tornou-se obsoleto, apresentando lentidão e falhas de integração.
+
+No entanto, a dor principal é a cegueira de dados. Com equipes distribuídas por todo o Brasil (de Manaus ao RS), a ferramenta não fornece insights para que a diretoria e o financeiro consigam responder a questões vitais:
+
+Por que o time de desenvolvimento não está performando?
+
+Onde estamos falhando nas entregas?
+
+Onde podemos alocar recursos pare melhorar a situção do time?
+
+O Impacto: Sem visibilidade sobre a produtividade e a alocação de horas, a empresa sofre com relatórios imprecisos, queda na qualidade dos projetos, perda de contratos e prejuízo financeiro direto.
 
 ---
 <a id="o-desafio"></a>
@@ -124,26 +140,50 @@ Além disso, seguimos um padrão de commits para garantir maior rastreabilidade 
 
 A estrutura de pastas do projeto (backend e frontend) ainda será definida conforme a evolução da arquitetura da aplicação e a organização dos módulos durante a primeira sprint.
 ```
+java-the-hut
 │
-├── 📁 backend/
-│
-├── 📁 frontend/
+├── 📁 backend/        → API REST (Spring Boot)
 │   └── 📁 src/
-│       ├── 📁 assets/
-│       ├── 📁 components/
-│       ├── 📁 pages/
-│       ├── 📁 features/
-│       │   ├── 📁 Auth/
-│       │   └── 📁 Dashboard/
-│       ├── 📁 hooks/
-│       ├── 📁 context/
-│       ├── 📁 services/
-│       ├── 📁 types/
-│       ├── 📁 utils/
-│       ├── 📁 styles/
-│       ├── App.tsx
-│       └── index.tsx
+│       └── 📁 main/
+│           └── 📁 java/
+│               └── 📁 com/
+│                   └── 📁 example/
+│                       └── 📁 App/
+│                           │
+│                           ├── 📁 Controller          → Camada responsável por expor os endpoints da API
+│                           │
+│                           ├── 📁 Dto                 → Objetos de transferência de dados
+│                           │   ├── 📁 Request         → DTOs utilizados para receber dados das requisições
+│                           │   └── 📁 Response        → DTOs utilizados para retornar dados nas respostas
+│                           │
+│                           ├── 📁 Exception           → Tratamento de exceções da aplicação
+│                           │
+│                           ├── 📁 Mapper              → Conversão entre Model e DTO
+│                           │
+│                           ├── 📁 Model               → Entidades do domínio e mapeamento com o banco de dados
+│                           │
+│                           ├── 📁 Repository          → Interfaces de acesso ao banco de dados (Spring Data)
+│                           │
+│                           ├── 📁 Security            → Configurações de autenticação e autorização
+│                           │
+│                           └── 📁 Service             → Regras de negócio da aplicação
 │
+└── 📁 frontend/       → Aplicação Web
+    └── 📁 src/
+        ├── 📁 assets/        → Arquivos estáticos
+        ├── 📁 components/    → Componentes reutilizáveis
+        ├── 📁 pages/         → Páginas da aplicação
+        ├── 📁 features/      → Módulos de funcionalidades
+        │   ├── 📁 Auth/
+        │   └── 📁 Dashboard/
+        ├── 📁 hooks/         → Hooks customizados
+        ├── 📁 context/       → Context API / gerenciamento de estado
+        ├── 📁 services/      → Comunicação com API
+        ├── 📁 types/         → Tipagens e interfaces
+        ├── 📁 utils/         → Funções utilitárias
+        ├── 📁 styles/        → Estilos globais
+        ├── App.tsx
+        └── index.tsx
  ```
 
 ---
