@@ -1,0 +1,8 @@
+[submodule "api-3dsm-backend"]
+	path = api-3dsm-backend
+	url = https://github.com/fatec-api/api-3dsm-backend.git
+[submodule "api-3dsm-frontend"]
+	path = api-3dsm-frontend
+	url = https://github.com/fatec-api/api-3dsm-frontend.git
+[submodule]
+	branch = main
