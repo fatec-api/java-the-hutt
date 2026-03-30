@@ -58,19 +58,18 @@ O backlog do produto encontra-se atualmente em fase de definição e priorizaç�
 | 04 | Alta | Como gestor, quero criar/inserir um item e atividade que será utilizada em um projeto para descrever a tarefa que o profissional realizará e poder atribuir um responsável | 3 | 1 |
 | 05 | Alta | Como gestor, quero atribuir um item e atividade ao profissional alocado em um projeto para que ele visualize suas atividades e possa realizar o apontamento de horas | 3 | 1 |
 | 06 | Alta | Como profissional, quero realizar o apontamento de horas diário/semanal selecionando os itens e atividades em que trabalhei para registrar meu esforço com precisão | 8 | 1 |
-| 07 | Alta | Como gestor, quero cadastrar e gerenciar clientes para poder vincular futuros projetos e garantir que as informações de faturamento estejam corretas | 3 | 1 |
-| 08 | Alta | Como gestor, quero visualizar os clientes ativos para poder vinculá-los a novos projetos e garantir a integridade dos relatórios | 2 | 1 |
-| 09 | Alta | Como gestor, quero visualizar a lista de profissionais existentes para saber em quais projetos participam e poder alocá-los de forma estratégica (ex.: especialidade) | 5 | 2 |
-| 10 | Alta | Como gestor, quero visualizar os projetos existentes para acompanhar o consumo de horas, esforço e o andamento das atividades em tempo real | 3 | 2 |
-| 11 | Alta | Como gestor, quero visualizar as atividades e itens realizados em um projeto para acompanhar o progresso comparando esforço planejado vs realizado | 5 | 2 |
-| 12 | Alta | Como gestor, quero visualizar a relação entre itens entregues e horas apontadas para analisar a capacidade produtiva e ajustar estratégias | 5 | 2 |
-| 13 | Alta | Como administrador, quero acessar o histórico de alterações dos lançamentos para garantir rastreabilidade e transparência dos dados | 5 | 2 |
-| 14 | Alta | Como gestor, quero visualizar o relatório de rentabilidade por projeto para identificar contratos lucrativos ou com excesso de custo | 5 | 3 |
-| 15 | Alta | Como financeiro, quero acompanhar o custo real acumulado dos profissionais por projeto para comparar com o orçamento previsto | 5 | 3 |
-| 16 | Média | Como financeiro, quero visualizar o comparativo entre custo acumulado dos profissionais e valor a ser faturado por projeto para monitorar a rentabilidade | 5 | 3 |
-| 17 | Média | Como gestor, quero alterar projetos para garantir que as regras de cobrança e custo estejam sempre atualizadas | 3 | 3 |
-| 18 | Média | Como gestor, quero alterar os dados dos profissionais para manter informações e valores atualizados | 3 | 3 |
-| 19 | Média | Como administrativo, quero alterar as informações dos clientes para manter os dados atualizados e garantir comunicação efetiva | 3 | 3 |
+| 07 | Alta | Como gestor, quero visualizar os projetos existentes para acompanhar o consumo de horas dos profissionais, esforço e o andamento das atividades em tempo real | 3 | 2 |
+| 08 | Alta | Como gestor, quero visualizar as atividades e itens realizados em um projeto para acompanhar o progresso comparando esforço planejado vs realizado, evidenciando os itens que estão frequentemente atrasadas | 2 | 2 |
+| 09 | Alta | Como gestor, quero visualizar a relação entre itens entregues e horas apontadas para analisar qualidade das descrições dos analistas para os itens e a capacidade produtiva dos profissionais. | 5 | 2 |
+| 10 | Média | Como administrador, quero acessar o histórico de alterações dos lançamentos para garantir rastreabilidade e transparência dos dados | 3 | 2 |
+| 11 | Média | Como gestor, quero alterar os dados dos profissionais para manter informações e valores atualizados | 5 | 2 |
+| 12 | Média | Como financeiro, quero acompanhar o custo real acumulado dos profissionais por projeto para comparar com o orçamento previsto | 5 | 2 |
+| 13 | Média | Como financeiro, quero visualizar o comparativo entre custo acumulado dos profissionais e valor a ser faturado por projeto para monitorar a rentabilidade | 5 | 3 |
+| 14 | Baixa | Como gestor, quero alterar projetos para garantir que as regras de cobrança e custo estejam sempre atualizadas | 5 | 3 |
+| 15 | Baixa | Como gestor, quero visualizar a lista de profissionais existentes para saber em quais projetos participam e poder alocá-los de forma estratégica | 5 | 3 |
+| 16 | Baixa | Como gestor, quero cadastrar e gerenciar clientes para poder vincular futuros projetos e garantir que as informações de faturamento estejam corretas | 5 | 3 |
+| 17 | Baixa | Como gestor, quero visualizar os clientes ativos para poder vinculá-los a novos projetos e garantir a integridade dos relatórios | 3 | 3 |
+| 18 | Baixa | Como administrativo, quero alterar as informações dos clientes para manter os dados atualizados e garantir comunicação efetiva | 3 | 3 |
 ---
 
 <a id="dor-e-dod"></a>
