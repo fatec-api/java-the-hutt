@@ -6,6 +6,7 @@ Projeto desenvolvido pela equipe Java the Hutt do 3º semestre de Desenvolviment
 <div align="center">
     
 [A Dor do Cliente](#a-dor) | 
+[A Solução para o Cliente](#a-solucao) |
 [O Desafio](#o-desafio) | 
 [Backlog de Produto](#backlog-de-produto) | 
 [DoR e DoD](#dor-e-dod) | 
@@ -32,13 +33,50 @@ Por que o time de desenvolvimento não está performando?
 
 Onde estamos falhando nas entregas?
 
-Onde podemos alocar recursos pare melhorar a situção do time?
+Onde podemos alocar recursos para melhorar a situação do time?
 
-O Impacto: Sem visibilidade sobre a produtividade e a alocação de horas, a empresa sofre com relatórios imprecisos, queda na qualidade dos projetos, perda de contratos e prejuízo financeiro direto.
+Impacto: Sem visibilidade sobre a produtividade e a alocação de horas, a empresa sofre com relatórios imprecisos, queda na qualidade dos projetos, perda de contratos e prejuízo financeiro direto.
 
 ---
+<a id="a-solucao"></a>
+## 🚀 A Solução para o Cliente
+
+Dado o curto prazo do projeto de 3 meses e a complexidade de integrar todos os relatórios financeiros e operacionais, a estratégia adotada **não é resolver tudo de uma vez**, mas sim atacar o principal ponto de dor: **a falta de visibilidade sobre a performance das equipes**.  
+
+Em vez de tentar consolidar toda a visão financeira, a solução gera **insights acionáveis sobre produtividade, atrasos e eficiência das entregas**.
+
+### Dados que serão utilizados:
+- Logs de mudança de status das tarefas  
+- Esforço registrado por profissional  
+- Estimativa de tempo por tarefa  
+- Tipo ou categoria das tarefas  
+- Responsáveis pela documentação das tarefas  
+
+### O que a solução entrega:
+
+1. **Identificação de atrasos por profissional**  
+   Permite saber quais profissionais apresentam maior taxa de atraso.  
+   **A partir de:** Consulta de Projetos (US07)
+
+2. **Tarefas que demandam mais tempo que o esperado**  
+   Permite identificar gargalos por tipo de tarefa e ajustar processos.  
+   **A partir de:** Acompanhamento de Atividades e Itens (US08)
+
+3. **Associação de analistas a tarefas críticas**  
+   Entende quais analistas estão ligados às tarefas com maior atraso, permitindo decisões de realocação.  
+   **A partir de:** Análise de Capacidade Produtiva (US09)
+
+4. **Exportação e análise de apontamentos**  
+   Visualização e exportação de dados para CSV, possibilitando análises complementares.  
+   **A partir de:** Histórico de Alterações (US10)
+
+5. **Monitoramento do orçamento do projeto**  
+   Comparação entre orçamento real e previsto, garantindo controle financeiro eficiente.  
+   **A partir de:** Monitoramento de Custo Real por Projeto (US12)
+   
+---
 <a id="o-desafio"></a>
-## 🧩 O Desafio
+## 🧩 O Desafio Proposto aos Alunos
 O sistema de Controle de Apontamento de Horas tem como objetivo centralizar e organizar o registro de horas trabalhadas em projetos, substituindo planilhas e controles dispersos que geram inconsistências e retrabalho. A proposta é oferecer maior visibilidade sobre esforço, custos e base de cobrança, garantindo informações confiáveis para tomada de decisão.
 
 A solução será uma aplicação web com back-end em microserviços e APIs REST e front-end em single-page application, permitindo apontamentos por atividade, com diferentes regras de custo e faturamento por projeto, profissional ou tipo de atividade. O foco é unir flexibilidade nas regras com simplicidade no uso e relatórios claros.
@@ -47,7 +85,6 @@ A solução será uma aplicação web com back-end em microserviços e APIs REST
 <a id="backlog-de-produto"></a>
 ## 📋 Backlog de Produto
 
-🚧 Em elaboração  
 O backlog do produto encontra-se atualmente em fase de definição e priorização das funcionalidades.
 
 | Rank	| Prioridade | User Stories | Estimativa (Pontos) | Sprint |
@@ -100,24 +137,39 @@ O backlog do produto encontra-se atualmente em fase de definição e priorizaç�
 <img src="https://cdn.simpleicons.org/react/61DAFB" height="32"/>
 <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" height="32"/>
 <img src="https://cdn.simpleicons.org/daisyui/5A0EF8" height="32"/>
+<img src="https://cdn.simpleicons.org/nodedotjs/339933" height="32"/>
 </p>
 
 ### ⚙️ Backend & Dados
 <p>
-<img src="https://cdn.simpleicons.org/openjdk/ED8B00" height="32"/>
-<img src="https://cdn.simpleicons.org/spring/6DB33F" height="31"/>
-<img src="https://cdn.simpleicons.org/nodedotjs/339933" height="32"/>
-<img src="https://cdn.simpleicons.org/mysql/4479A1" height="31"/>
-<img src="https://cdn.simpleicons.org/mongodb/47A248" height="33"/>
-<!-- Este é um comentário em Markdown -->
+<img src="https://cdn.simpleicons.org/openjdk/ED8B00" height="32"/>  <!-- Java -->
+<img src="https://cdn.simpleicons.org/spring/6DB33F" height="31"/> <!-- Spring Boot -->
+<img src="https://cdn.simpleicons.org/mysql/4479A1" height="31"/>  <!-- MySQL -->
+<!-- <img src="https://cdn.simpleicons.org/docker/2496ED" height="31"/> <!-- Docker -->
+<!-- Insomnia -->
+<a href="https://insomnia.rest/">
+  <img src="https://insomnia.rest/images/insomnia-logo.svg" height="31" alt="Insomnia"/>
+</a>
+<!-- <img src="https://cdn.simpleicons.org/swagger/85EA2D" height="32"/> <!-- Swagger --> 
 </p>
 
 ### 🛠️ Ferramentas & DevOps
 <p>
-<img src="https://cdn.simpleicons.org/git/F05032" height="32"/>
-<img src="https://cdn.simpleicons.org/jira/0052CC" height="32"/>
-<img src="https://cdn.simpleicons.org/excalidraw/6965DB" height="32"/>
-<img src="https://cdn.simpleicons.org/swagger/85EA2D" height="32"/>
+<img src="https://cdn.simpleicons.org/git/F05032" height="32"/> <!-- Git -->
+<img src="https://cdn.simpleicons.org/github/4B4B4B" height="32"/> <!-- GitHub -->
+<img src="https://cdn.simpleicons.org/jira/0052CC" height="32"/> <!-- Jira -->
+<img src="https://cdn.simpleicons.org/excalidraw/6965DB" height="32"/> <!-- Excalidraw -->
+<img src="https://www.gstatic.com/images/branding/product/1x/docs_2020q4_48dp.png" height="32"/> <!-- Google Docs -->
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" height="32"/><!-- Discord -->
+    <!-- VS Code -->
+<a href="https://code.visualstudio.com/">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" height="32" height="31" alt="VS Code"/>
+</a>
+
+<!-- IntelliJ IDEA -->
+<a href="https://www.jetbrains.com/idea/">
+  <img src="https://resources.jetbrains.com/storage/products/intellij-idea/img/meta/intellij-idea_logo_300x300.png" height="31" alt="IntelliJ IDEA"/>
+</a>
 </p>
 
 ---
