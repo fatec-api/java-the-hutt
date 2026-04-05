@@ -10,7 +10,7 @@ Projeto desenvolvido pela equipe Java the Hutt do 3º semestre de Desenvolviment
 [O Desafio](#o-desafio) | 
 [Backlog de Produto](#backlog-de-produto) | 
 [DoR e DoD](#dor-e-dod) | 
-[Cronograma de Evolução do Projeto](assets/sprint-1/cronograma-evolucao.jpg) | 
+[Cronograma de Evolução do Projeto](assets/sprint-1/cronograma-evolucao.png) | 
 [Sprints](#sprints) | 
 [Tecnologias Utilizadas](#tecnologias-utilizadas) |
 [Estratégia de Branchs e Padrão de Commits](#padrao-de-commits) |
@@ -85,8 +85,6 @@ A solução será uma aplicação web com back-end em microserviços e APIs REST
 <a id="backlog-de-produto"></a>
 ## 📋 Backlog de Produto
 
-O backlog do produto encontra-se atualmente em fase de definição e priorização das funcionalidades.
-
 | Rank	| Prioridade | User Stories | Estimativa (Pontos) | Sprint |
 | --- | --- | --- | --- | --- |
 | 01 | Alta | Como gestor, quero inserir as informações dos profissionais para poder alocá-los em projetos futuros e calcular o custo interno | 5 | 1 |
@@ -119,14 +117,13 @@ O backlog do produto encontra-se atualmente em fase de definição e priorizaç�
 ## 👟 Sprints
 | Sprint | Período | Documentação | Vídeo do Incremento | Status |
 |---|---|---|---|---|
-| 1 | 16/03/2026 - 05/04/2026 | [Ver Documentação](https://docs.google.com/document/d/1Z_DbshfP_fMyZPNkN-YQ0DQifeGzecKMofmZY3EVt1E/edit?tab=t.zcrpwsovs9pd#heading=h.ec1c7t75nhkv) | <div align="center">[Ver Vídeo]()</div> | ⏳ Pendente |
+| 1 | 16/03/2026 - 05/04/2026 | [Ver Documentação](https://docs.google.com/document/d/1Z_DbshfP_fMyZPNkN-YQ0DQifeGzecKMofmZY3EVt1E/edit?tab=t.zcrpwsovs9pd#heading=h.ec1c7t75nhkv) | <div align="center">[Ver Vídeo](assets/sprint-1/api3dsm-sprint1.gif)</div> | ✅ Concluído |
 | 2 | 13/04/2026 - 03/05/2026 | [Ver Documentação](/documents/sprint-2/README.md) | <div align="center">[Ver Vídeo]()</div> | ⏳ Pendente |
 | 3 | 11/05/2026 - 31/05/2026 | [Ver Documentação](/documents/sprint-3/README.md) | <div align="center">[Ver Vídeo]()</div> | ⏳ Pendente |
 
 ---
 <a id="tecnologias-utilizadas"></a>
 ## 💻 Tecnologias Utilizadas
-⚠️ *Nota: Algumas tecnologias estão em fase de validação arquitetural e podem sofrer alterações.*
 
 ### 🎨 Frontend
 <p>
@@ -187,8 +184,6 @@ Além disso, seguimos um padrão de commits para garantir maior rastreabilidade 
 <a id="estrutura-do-projeto"></a>
 ## 🗂️ Estrutura do Projeto
 
-🚧 **Pendente – Em definição**
-
 A estrutura de pastas do projeto (backend e frontend) ainda será definida conforme a evolução da arquitetura da aplicação e a organização dos módulos durante a primeira sprint.
 ```
 java-the-hut
@@ -220,37 +215,46 @@ java-the-hut
 │                           └── 📁 Service             → Regras de negócio da aplicação
 │
 └── 📁 frontend/       → Aplicação Web
-    └── 📁 src/
-        ├── 📁 assets/        → Arquivos estáticos
-        ├── 📁 components/    → Componentes reutilizáveis
-        ├── 📁 pages/         → Páginas da aplicação
-        ├── 📁 features/      → Módulos de funcionalidades
-        │   ├── 📁 Auth/
-        │   └── 📁 Dashboard/
-        ├── 📁 hooks/         → Hooks customizados
-        ├── 📁 context/       → Context API / gerenciamento de estado
-        ├── 📁 services/      → Comunicação com API
-        ├── 📁 types/         → Tipagens e interfaces
-        ├── 📁 utils/         → Funções utilitárias
-        ├── 📁 styles/        → Estilos globais
-        ├── App.tsx
-        └── index.tsx
+    └── 📁 src/        → Código-fonte do frontend
+        ├── 📁 api/           → Serviços de API, instâncias e chamadas HTTP (ex: AllocationService.tsx, instance.ts)
+        ├── 📁 assets/        → Arquivos estáticos (imagens, ícones, gifs)
+        ├── 📁 auth/          → Funcionalidades de autenticação
+        │   ├── components/   → Componentes específicos de auth
+        │   ├── hooks/        → Hooks relacionados a auth
+        │   ├── services/     → Serviços internos de auth
+        │   └── utils/        → Funções auxiliares de auth
+        ├── 📁 components/    → Componentes reutilizáveis em toda a aplicação (modais, formulários, tabelas)
+        ├── 📁 contexts/      → Context API / gerenciamento de estado global
+        ├── 📁 pages/         → Páginas principais da aplicação (cada tela é um arquivo .tsx)
+        ├── 📁 features/      → Módulos de funcionalidades específicas
+        │   ├── 📁 Auth/      → Funcionalidades de login, logout e registro
+        │   └── 📁 Dashboard/ → Funcionalidades do painel de controle
+        ├── 📁 hooks/         → Hooks customizados para lógica compartilhada
+        ├── 📁 services/      → Comunicação com a API para CRUD de usuários, projetos, clientes e apontamentos
+        ├── 📁 types/         → Tipagens e interfaces TypeScript
+        ├── 📁 utils/         → Funções utilitárias (helpers)
+        ├── 📁 styles/        → Estilos globais e variáveis de design
+        ├── App.tsx           → Componente raiz da aplicação
+        └── index.tsx         → Ponto de entrada da aplicação
  ```
+
+## Próximos Passos – Estratégia de Microsserviços
+
+Na primeira sprint, o sistema é monolítico para validar rapidamente as regras de negócio. Nas próximas sprints, será dividido em microsserviços independentes, com responsabilidades isoladas, comunicação via API e bancos próprios. Para mais detalhes, consulte o [Documento de Estratégia de Microsserviços](https://docs.google.com/document/d/1Z_DbshfP_fMyZPNkN-YQ0DQifeGzecKMofmZY3EVt1E/edit?tab=t.gj1c16m9heoa).
+.
 
 ---
 <a id="manual-do-usuario"></a>
 ## 📜 Manual do Usuário
 
-🚧 **Pendente**
 **:link: Clique no link abaixo para visualizar o Manual do Usuário:**  
-> [Manual do Usuário](https://docs.google.com/document/d/1Z_DbshfP_fMyZPNkN-YQ0DQifeGzecKMofmZY3EVt1E/edit?tab=t.16hfhaca36s0)
+> [Manual do Usuário](https://docs.google.com/document/d/12I-0IGaLOCsu6-cSiFregg8mHEq8kEv9FhEO5Tt4_ec/edit?usp=sharing)
 
 ---
 
 <a id="manual-de-instalacao"></a>
 ## 📖 Manual de Instalação
 
-🚧 **Em definição – As instruções detalhadas serão atualizadas conforme a implementação do projeto.**
 
 Abaixo está a estrutura prevista para execução local da aplicação.
 
@@ -258,45 +262,57 @@ Abaixo está a estrutura prevista para execução local da aplicação.
 
 Antes de iniciar, será necessário ter instalado:
 
-- Java (JDK 17 ou superior)
+- Java JDK 21 ou superior
 - Maven
 - Node.js
-- Banco de Dados relacional
+- MySQL
 - Git
+- Variáveis de ambiente configuradas para acesso ao banco
 
 ### 🌀 Clonando o repositório
 
 ```bash
 git clone https://github.com/fatec-api/java-the-hut.git
 cd java-the-hut
+git submodule init
+git submodule update
 ```
 
 ---
-
 ## ⚙️ Configuração do Backend (Spring MVC)
-
-🚧 **Pendente – Configuração será detalhada após definição final da estrutura do projeto.**
 
 Passos previstos:
 
 1. Acessar a pasta do backend
 ```bash
-cd backend
+cd api-3dsm-backend
 ```
 
 2. Configurar variáveis de ambiente no arquivo:
 ```
 application.properties
+
+spring.application.name=App
+
+# ======================
+# MySQL (ATIVO)
+# ======================
+spring.datasource.url=jdbc:mysql://localhost:3306/gsw_api?createDatabaseIfNotExist=true
+spring.datasource.username=root
+spring.datasource.password=SUA_SENHA_AQUI
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+# ======================
+# JPA / Hibernate
+# ======================
+spring.jpa.hibernate.ddl-auto=update
+spring.session.jdbc.initialize-schema=always
 ```
 (credenciais do banco, porta do servidor, etc.)
 
 3. Executar o projeto via Maven ou Gradle
 ```bash
 mvn spring-boot:run
-```
-ou
-```bash
-./gradlew bootRun
 ```
 
 A API deverá rodar em:
@@ -308,11 +324,9 @@ http://localhost:8080
 
 ## ⚙️ Configuração do Frontend (React + TypeScript)
 
-🚧 **Pendente – Configuração será detalhada após definição final da estrutura do projeto.**
-
 1. Acessar a pasta do frontend
 ```bash
-cd frontend
+cd api-3dsm-frontend
 ```
 
 2. Instalar dependências
