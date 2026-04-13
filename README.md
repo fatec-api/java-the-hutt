@@ -93,7 +93,7 @@ A solução será uma aplicação web com back-end em microserviços e APIs REST
 | 04 | Alta | Como gestor, quero criar/inserir um item e atividade que será utilizada em um projeto para descrever a tarefa que o profissional realizará e poder atribuir um responsável | 3 | 1 |
 | 05 | Alta | Como gestor, quero atribuir um item e atividade ao profissional alocado em um projeto para que ele visualize suas atividades e possa realizar o apontamento de horas | 3 | 1 |
 | 06 | Alta | Como profissional, quero realizar o apontamento de horas diário/semanal selecionando os itens e atividades em que trabalhei para registrar meu esforço com precisão | 8 | 1 |
-| 07 | Como gestor, quero revisar, aprovar ou reprovar os apontamentos e acessar o histórico de alterações para garantir que os apontamentos estejam corretos, o faturamento seja justo e os dados sejam auditáveis. | 8 | 2 |
+| 07 | Alta | Como gestor, quero revisar, aprovar ou reprovar os apontamentos e acessar o histórico de alterações para garantir que os apontamentos estejam corretos, o faturamento seja justo e os dados sejam auditáveis. | 8 | 2 |
 | 08 | Alta | Como gestor, quero visualizar as atividades e itens realizados em um projeto para acompanhar o progresso comparando esforço planejado vs realizado, evidenciando os itens que estão frequentemente atrasadas | 3 | 2 |
 | 09 | Alta | Como gestor, quero visualizar a relação entre itens entregues e horas apontadas para analisar qualidade das descrições dos analistas para os itens e a capacidade produtiva dos profissionais. | 5 | 2 |
 | 10 | Média | Como gestor, quero visualizar os projetos existentes para acompanhar o consumo de horas dos profissionais, esforço e o andamento das atividades em tempo real | 3 | 2 |
