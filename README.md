@@ -142,7 +142,7 @@ A solução será uma aplicação web com back-end em microserviços e APIs REST
 <img src="https://cdn.simpleicons.org/openjdk/ED8B00" height="32"/>  <!-- Java -->
 <img src="https://cdn.simpleicons.org/spring/6DB33F" height="31"/> <!-- Spring Boot -->
 <img src="https://cdn.simpleicons.org/mysql/4479A1" height="31"/>  <!-- MySQL -->
-<!-- <img src="https://cdn.simpleicons.org/docker/2496ED" height="31"/> <!-- Docker -->
+<img src="https://cdn.simpleicons.org/docker/2496ED" height="31"/> <!-- Docker
 <!-- Insomnia -->
 <a href="https://insomnia.rest/">
   <img src="https://insomnia.rest/images/insomnia-logo.svg" height="31" alt="Insomnia"/>
@@ -268,6 +268,7 @@ Antes de iniciar, será necessário ter instalado:
 - MySQL
 - Git
 - Variáveis de ambiente configuradas para acesso ao banco
+- Docker
 
 ### 🌀 Clonando o repositório
 
@@ -310,14 +311,25 @@ spring.session.jdbc.initialize-schema=always
 ```
 (credenciais do banco, porta do servidor, etc.)
 
-3. Executar o projeto via Maven ou Gradle
+3. criar o arquivo .env na raíz do projeto
 ```bash
-mvn spring-boot:run
+# Mysql
+DB_ROOT_PASS=sua_senha
+DB_APP_PASS=sua_senha
+
+# keycloak
+KEYCLOAK_ADMIN_PASS=user
+
+# mongodb
+MONGO_PASS=sua_senha
+
+# rabbitmq
+RABBIT_PASS=sua_senha
 ```
 
-A API deverá rodar em:
+4-  Executar o projeto via Docker:
 ```
-http://localhost:8080
+docker compose up -d
 ```
 
 ---
