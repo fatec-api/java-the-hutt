@@ -115,7 +115,7 @@ A solução será uma aplicação web com back-end em microserviços e APIs REST
 | Sprint | Período | Documentação | Vídeo do Incremento | Status |
 |---|---|---|---|---|
 | 1 | 16/03/2026 - 05/04/2026 | [Ver Documentação](https://docs.google.com/document/d/1Z_DbshfP_fMyZPNkN-YQ0DQifeGzecKMofmZY3EVt1E/edit?tab=t.zcrpwsovs9pd#heading=h.ec1c7t75nhkv) | <div align="center">[Ver Vídeo](assets/sprint-1/api3dsm-sprint1.gif)</div> | ✅ Concluído |
-| 2 | 13/04/2026 - 03/05/2026 | [Ver Documentação](https://docs.google.com/document/d/1Z_DbshfP_fMyZPNkN-YQ0DQifeGzecKMofmZY3EVt1E/edit?tab=t.g2owc95xwzh9) | <div align="center">[Ver Vídeo]()</div> | Em Andamento |
+| 2 | 13/04/2026 - 03/05/2026 | [Ver Documentação](https://docs.google.com/document/d/1Z_DbshfP_fMyZPNkN-YQ0DQifeGzecKMofmZY3EVt1E/edit?tab=t.g2owc95xwzh9) | <div align="center">[Ver Vídeo](assets/sprint-2/api3dsm-sprint2.gif)</div> | ✅ Concluído |
 | 3 | 11/05/2026 - 31/05/2026 | [Ver Documentação](https://docs.google.com/document/d/1Z_DbshfP_fMyZPNkN-YQ0DQifeGzecKMofmZY3EVt1E/edit?tab=t.1guedwffutvt) | <div align="center">[Ver Vídeo]()</div> | ⏳ Pendente |
 
 ---
@@ -235,7 +235,7 @@ java-the-hut
         └── index.tsx         → Ponto de entrada da aplicação
  ```
 
-## Próximos Passos – Estratégia de Microsserviços
+## Estratégia de Microsserviços
 
 Na primeira sprint, o sistema é monolítico para validar rapidamente as regras de negócio. Nas próximas sprints, será dividido em microsserviços independentes, com responsabilidades isoladas, comunicação via API e bancos próprios. Para mais detalhes, consulte o [Documento de Estratégia de Microsserviços](https://docs.google.com/document/d/1Z_DbshfP_fMyZPNkN-YQ0DQifeGzecKMofmZY3EVt1E/edit?tab=t.gj1c16m9heoa).
 .
@@ -286,29 +286,7 @@ Passos previstos:
 cd api-3dsm-backend
 ```
 
-2. Configurar variáveis de ambiente no arquivo:
-```
-application.properties
-
-spring.application.name=App
-
-# ======================
-# MySQL (ATIVO)
-# ======================
-spring.datasource.url=jdbc:mysql://localhost:3306/gsw_api?createDatabaseIfNotExist=true
-spring.datasource.username=root
-spring.datasource.password=SUA_SENHA_AQUI
-spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-
-# ======================
-# JPA / Hibernate
-# ======================
-spring.jpa.hibernate.ddl-auto=update
-spring.session.jdbc.initialize-schema=always
-```
-(credenciais do banco, porta do servidor, etc.)
-
-3. criar o arquivo .env na raíz do projeto
+2. criar o arquivo .env na raíz do projeto
 ```bash
 # Mysql
 DB_ROOT_PASS=sua_senha
@@ -324,7 +302,7 @@ MONGO_PASS=sua_senha
 RABBIT_PASS=sua_senha
 ```
 
-4-  Executar o projeto via Docker:
+3.  Executar o projeto via Docker:
 ```
 docker compose up -d
 ```
@@ -364,6 +342,7 @@ http://localhost:5173
 | João Vitor Silva Correa Siqueira | Scrum Master | <a href="https://github.com/kakashinho"><img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white" alt="GitHub"></a> <a href="https://www.linkedin.com/in/joao-vitor-siqueira-a2a2a3227/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn"></a> |
 | Gabriel Kodato Faria | Desenvolvedor | <a href="https://github.com/Kodatoo"><img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white" alt="GitHub"></a> <a href="https://www.linkedin.com/in/gabriel-kodato-b745742b8/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn"></a> |
 | Gustavo Ribeiro da Rosa | Desenvolvedor | <a href="https://github.com/gustasvos"><img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white" alt="GitHub"></a> <a href="https://www.linkedin.com/in/gustavo-rosa-46a251180/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn"></a> |
+| João Victor Dos Reis Santos | Desenvolvedor | <a href="https://github.com/Templasan"><img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white" alt="GitHub"></a> <a href="https://www.linkedin.com/in/joaodreissantos/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn"></a> |
 | Kaique Henrique Silva Pinto | Desenvolvedor | <a href="https://github.com/kaiquehsp"><img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white" alt="GitHub"></a> <a href="https://www.linkedin.com/in/kaiquehenrique"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn"></a> |
 | Laís Zanardi Inocêncio | Desenvolvedora | <a href="https://github.com/lais-zanardi"><img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white" alt="GitHub"></a> <a href="https://www.linkedin.com/in/lais-zanardi-inocencio/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn"></a> |
 | Lucas Inácio de Carvalho | Desenvolvedor | <a href="https://github.com/Lukitta013"><img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white" alt="GitHub"></a> <a href="https://www.linkedin.com/in/lucas-in%C3%A1cio-6aa3ba29a/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn"></a> |
