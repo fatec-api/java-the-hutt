@@ -112,7 +112,7 @@ A solução será uma aplicação web com back-end em microserviços e APIs REST
 |---|---|---|---|---|
 | 1 | 16/03/2026 - 05/04/2026 | [Ver Documentação](https://docs.google.com/document/d/1Z_DbshfP_fMyZPNkN-YQ0DQifeGzecKMofmZY3EVt1E/edit?tab=t.zcrpwsovs9pd#heading=h.ec1c7t75nhkv) | <div align="center">[Ver Vídeo](assets/sprint-1/api3dsm-sprint1.gif)</div> | ✅ Concluído |
 | 2 | 13/04/2026 - 03/05/2026 | [Ver Documentação](https://docs.google.com/document/d/1Z_DbshfP_fMyZPNkN-YQ0DQifeGzecKMofmZY3EVt1E/edit?tab=t.g2owc95xwzh9) | <div align="center">[Ver Vídeo](assets/sprint-2/api3dsm-sprint2.gif)</div> | ✅ Concluído |
-| 3 | 11/05/2026 - 31/05/2026 | [Ver Documentação](https://docs.google.com/document/d/1Z_DbshfP_fMyZPNkN-YQ0DQifeGzecKMofmZY3EVt1E/edit?tab=t.1guedwffutvt) | <div align="center">[Ver Vídeo]()</div> | ⏳ Pendente |
+| 3 | 11/05/2026 - 31/05/2026 | [Ver Documentação](https://docs.google.com/document/d/1Z_DbshfP_fMyZPNkN-YQ0DQifeGzecKMofmZY3EVt1E/edit?tab=t.1guedwffutvt) | <div align="center">[Ver Vídeo](assets/sprint-3/api3dsm-sprint3.gif)</div> | ✅ Concluído |
 
 ---
 <a id="tecnologias-utilizadas"></a>
