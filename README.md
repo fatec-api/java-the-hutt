@@ -54,23 +54,19 @@ Em vez de tentar consolidar toda a visão financeira, a solução gera **insight
 
 ### O que a solução entrega:
 
-1. **Identificação de atrasos por profissional**  
-   Permite saber quais profissionais apresentam maior taxa de atraso.  
-   **A partir de:** Consulta de Projetos (US07)
-
-2. **Tarefas que demandam mais tempo que o esperado**  
+1.  **Exportação e análise de apontamentos**  
+   Visualização e exportação de dados para CSV, possibilitando análises complementares.  
+   **A partir de:** Histórico de Alterações (US07)
+    
+3.  **Tarefas que demandam mais tempo que o esperado**  
    Permite identificar gargalos por tipo de tarefa e ajustar processos.  
    **A partir de:** Acompanhamento de Atividades e Itens (US08)
 
-3. **Associação de analistas a tarefas críticas**  
-   Entende quais analistas estão ligados às tarefas com maior atraso, permitindo decisões de realocação.  
-   **A partir de:** Análise de Capacidade Produtiva (US09)
+3.  **Identificação de atrasos por profissional**  
+   Permite saber quais profissionais apresentam maior taxa de atraso.  
+   **A partir de:** Consulta de Projetos (US09)
 
-4. **Exportação e análise de apontamentos**  
-   Visualização e exportação de dados para CSV, possibilitando análises complementares.  
-   **A partir de:** Histórico de Alterações (US10)
-
-5. **Monitoramento do orçamento do projeto**  
+4. **Monitoramento do orçamento do projeto**  
    Comparação entre orçamento real e previsto, garantindo controle financeiro eficiente.  
    **A partir de:** Monitoramento de Custo Real por Projeto (US12)
    
